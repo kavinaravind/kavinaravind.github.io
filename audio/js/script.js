@@ -4,7 +4,8 @@ window.onload = function() {
 	canvas = document.createElement('canvas');
 	canvas.width = window.innerWidth;
 	canvas.height = window.innerHeight;
-	document.body.appendChild(canvas);
+	document.getElementById('container').appendChild(canvas);
+	//document.body.appendChild(canvas);
 	ctx = canvas.getContext('2d');
 
 	setupWebAudio();
